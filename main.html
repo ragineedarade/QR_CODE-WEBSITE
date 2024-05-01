@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="qr.css" />
+    <title>QR Code Generator</title>
+  </head>
+  <body>
+    <nav>
+      <label class="logo">🅰🅻🅻🆀🆁</label>
+      <ul>
+        <li><a class="active" href="main.html">𝓗𝓸𝓶𝓮 </a></li>
+        <li><a class="active" href="About.html"> 𝓐𝓫𝓸𝓾𝓽 </a></li>
+        <!-- <li><a class="active" href="images.html"> Images </a></li> -->
+        <li><a class="active" href=" Connect.html"> 𝓒𝓸𝓷𝓷𝓮𝓬𝓽</a></li>
+      </ul>
+    </nav>
+    <div class="load">
+      <div class="box">
+        <div class="qr-header">
+          <h1>Generate QR Code</h1>
+          <input type="text" placeholder="Type your text or URL" id="qr-text" />
+          <div>
+            <label for="sizes">Select Size:</label>
+            <select id="sizes">
+              <option value="100">100x100</option>
+              <option value="200">200x200</option>
+              <option value="300">300x300</option>
+              <option value="400">400x400</option>
+              <option value="500">500x500</option>
+              <option value="600">600x600</option>
+              <option value="700">700x700</option>
+              <option value="800">800x800</option>
+              <option value="900">900x900</option>
+              <option value="1000">1000x1000</option>
+            </select>
+          </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr-footer">
+          <a href="" id="generateBtn">Generate</a>
+          <a href="" id="downloadBtn" download="QR_Code.png">Download</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+
+        <ul class="social_icons">
+          <li>
+            <a href="https://sites.google.com/view/ragineedarade/home"
+              ><ion-icon name="person-circle-outline"> </ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/ragineedarade"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/raginee_darade/?hl=en"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/raginee-darade/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="main.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="connect.html">Connect</a>
+        </li>
+        <li>
+          <a href="google.html">form</a>
+        </li>
+      </ul>
+      @2021 Online Tutorial | All Right Reserved
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="qr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </body>
+</html>

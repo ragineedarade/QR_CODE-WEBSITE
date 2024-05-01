@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background: #243e46;
+      height: 90px;
+      width: 100%;
+
+      margin-bottom: 0;
+    }
+
+    label.logo {
+      color: rgb(232, 223, 223);
+      font-size: 35px;
+      line-height: 80px;
+      margin: 15px;
+    }
+    nav ul {
+      float: right;
+      margin-right: 35px;
+    }
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 25px;
+    }
+    .lody {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fefefe;
+
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-left: 40%;
+      border-color: 2px solid black;
+    }
+
+    .about-section {
+      background: rgb(237, 225, 225);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      transition: transform 0.5s;
+    }
+
+    .profile-photo img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 5px solid #554848;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .bio h1,
+    .skills h2 {
+      color: #333;
+    }
+
+    .bio p,
+    .skills ul {
+      color: #666;
+    }
+
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #eee;
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .profile-photo img:hover,
+    .skills li:hover {
+      transform: scale(0.7);
+    }
+
+    .about-section:hover {
+      transform: translateY(-10px);
+    }
+    .cont p,
+    .qw {
+      font-size: 40px;
+      margin-top: 120px;
+      color: rgb(4, 46, 46);
+      font-weight: 800;
+      text-align: left;
+margin-bottom: 0px;
+      margin-left: 5%;
+    }
+    .cont .er {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 20px;
+      align-items: center;
+      color: rgb(140, 110, 110);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 50px;
+      font-size: large;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    .qw {
+      width: 300px;
+      left: 10%;
+      margin-top: 0px;
+      font-weight: 800;
+      height: 2px;
+      background-color: rgb(210, 133, 133);
+    }
+    H2{
+      margin-left: 30px;
+      font-size: larger;
+      font-size: 29px;
+    }
+    .ra ul li {
+      margin-top: 15px;
+      font-family: Tahoma, sans-serif;
+      margin-left: 30px;
+
+    }
+    .ra p{
+      font-size: 30px;
+      margin-left: 10px;
+    }
+    .ra{
+      margin-bottom: 80px;
+    }
+    footer{
+      position: relative;
+      width: 100%;
+      background-color:  #0b4055;
+      min-height:100px ;
+      padding: 20px 50px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   } 
+    
+    footer .social_icons,
+     footer .menu{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+  
+   }
+     footer .social_icons  li,
+      footer  .menu li
+  {
+      list-style: none;
+  }
+  footer .social_icons  li a
+   {
+      font-size: 2.5em;
+      color: #030303;
+       margin: 0px 10px;
+       display: inline-block;
+       transition: 0.5s;
+       text-decoration: none;
+       opacity: 0.75;
+      
+  }
+  footer .menu li a
+  {
+      font-size: 2.5em;
+      color: #151414;
+       margin: 0px 10px;
+       display: inline-block;
+       transition: 0.5s;
+       text-decoration: none;
+       opacity: 0.75;
+      
+  }
+  
+  footer .social_icons li a :hover{
+      transform: translateY(-15px);
+  }
+  footer  .menu  li a  :hover{
+   opacity: 2px !important;
+   color: #f3eaed;
+   transform: translateY(-15px);
+   
+  }
+  footer  .menu  li  :hover{
+      opacity: 2px !important;
+      color: #cbbcc0;
+      transform: translateY(-15px);
+      
+     }
+  footer {
+     color: rgb(9, 0, 0);
+     text-align: center;
+     margin-top: 25px; 
+     margin-bottom: 15px;
+     font-size: 1.1rem;
+  }
+  footer .wave {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background:   rgba(0, 0, 6, 0.067) url(wavw.png);
+      background-size:1000px  100px;
+    
+      
+  }
+   
+  </style>
+  <body>
+    <nav>
+      <label class="logo">🅰🅻🅻🆀🆁</label>
+      <ul>
+        <li><a class="active" href="main.html">𝓗𝓸𝓶𝓮 </a></li>
+        <li><a class="active" href="About.html"> 𝓐𝓫𝓸𝓾𝓽 </a></li>
+        <!-- <li><a class="active" href="images.html"> Images </a></li> -->
+        <li><a class="active" href=" Connect.html"> 𝓒𝓸𝓷𝓷𝓮𝓬𝓽</a></li>
+      </ul>
+    </nav>
+    <div class="cont">
+      <p>𝔸̶𝕓̶𝕠̶𝕦̶𝕥̶ ̶𝕎̶𝕖̶𝕓̶𝕤̶𝕚̶𝕥̶𝕖̶
+      <hr class="qw" /></p>
+      <h1>Welcome to 🅰🅻🅻🆀🆁</h1>
+      
+
+      <p class="er">
+        Enter the world of AllQR, where QR codes meet innovation. Whether you're
+        a business owner, developer, or simply curious about the power of QR
+        technology, AllQR is your gateway to a new realm of possibilities. 
+
+        Discover how QR codes can transform your interactions, streamline
+        processes, and enhance user experiences. From basic information sharing
+        to advanced applications, AllQR provides the tools and resources you
+        need to harness the full potential of QR codes.  Join us on this journey
+        as we explore the endless opportunities that QR technology offers. Let
+        AllQR be your guide to a smarter, more connected future.
+      </p>
+       
+    </div>
+    <H2>How You Can Use This Website</H2>
+    <div class="ra"> 
+      <p> 1.Text QR Code Generation:</p>
+       
+        <ul>
+          <li> Visit the "AllQR" website homepage.</li>
+          <li>Locate the text input field provided on the homepage or a
+             dedicated page for generating text QR codes.</li>
+          <li>Enter the desired text or message into the input field.</li>
+         <li>Click on the "Generate QR Code" button.</li>   
+         <li>The website will process the input and generate a QR 
+          code representing the provided text.</li>
+          <li>Users can then download the generated QR code image to their device 
+          by clicking<br> on the "Download" button associated with the QR code.</li>
+        </ul>
+      </div>
+      <div class="ra">
+        <p>2.URL QR Code Generation:</p>
+        <ul>
+          <li>Similarly, users can generate QR codes for URLs or web links.</li>
+          <li>Input the desired URL into the provided text field on the homepage or designated page.</li>
+          <li>Click on the "Generate QR Code" button.</li>
+          <li>The website will convert the URL into a QR code.</li>
+          <li>Users can then download the QR code image, which, when scanned, will direct individuals to the specified URL.
+          </li>
+
+        </ul>
+      </div>
+      <br><br><br><br><br>
+  
+    <div class="lody">
+      <div class="about-section">
+        <div class="profile-photo">
+          <img src="qrimg.jpg" alt="Profile Photo" />
+        </div>
+        <div class="bio">
+          <h1>  
+            𝐀𝐛𝐨𝐮𝐭 𝐌𝐞</h1>
+          <p>
+            `⋆  🎀  ℍ𝕖𝕝𝕝𝕠❢ 𝕀 𝕒𝕞 ℝ𝕒𝕘𝕚𝕟𝕖𝕖 𝔻𝕒𝕣𝕒𝕕𝕖 𝕀 𝕒𝕞 𝕒 𝕤𝕖𝕔𝕠𝕟𝕕 𝕪𝕖𝕒𝕣 𝕤𝕥𝕦𝕕𝕖𝕟𝕥 𝕠𝕗 𝕓.𝕥𝕖𝕔𝕙 𝕔𝕤𝕖
+            . 𝔹𝕣𝕒𝕟𝕔𝕙 𝕔𝕠-𝕡𝕣𝕠𝕕𝕦𝕔𝕖𝕣 𝕒𝕟𝕕 𝕕𝕚𝕣𝕖𝕔𝕥𝕠𝕣 𝕠𝕗 𝔸𝕃𝕃ℚℝ 𝕎𝕖𝕓𝕤𝕚𝕥𝕖  🎀  ⋆`
+          </p>
+        </div>
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+           
+            <li>c , c++</li>
+            <li>Web Development</li>
+           <li>AI & AI Tools</li>
+          <li>Python Devloper</li>
+            <li>Linux OS and Cyber Security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+
+        <ul class="social_icons">
+          <li>
+            <a href="#"><ion-icon name="person-circle-outline"> </ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+
+        <li>
+          <a href="connect.html">Connect</a>
+        </li>
+        <li>
+          <a href="google.hml">FAQ</a>
+        </li>
+      </ul>
+      @2021 Online Tutorial | All Right Reserved
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="qr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </body>
+</html>
