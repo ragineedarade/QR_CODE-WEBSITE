@@ -18,7 +18,7 @@ This project is a web-based QR Code Generator that allows users to generate and 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/qr-code-generator.git
+    git clone https://github.com/raginee_darade/qr-code-generator.git
     cd qr-code-generator
     ```
 
@@ -68,4 +68,4 @@ For any inquiries, you can contact the developer through the following links:
 
 ---
 
-**Note:** Replace `https://github.com/yourusername/qr-code-generator.git` with the actual URL of your GitHub repository.
+ 
